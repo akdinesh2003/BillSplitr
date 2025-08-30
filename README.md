@@ -2,8 +2,6 @@
 
 BillSplitr is a modern, intuitive web application designed to make splitting expenses with friends, family, or colleagues effortless and fair. Built with Next.js, ShadCN UI, and Tailwind CSS, it provides a seamless user experience for tracking group expenses. The app also features an AI-powered summary to give you intelligent insights into your group's spending habits.
 
-![BillSplitr Screenshot](https://picsum.photos/1200/600?grayscale&blur=2)
-
 ## ✨ Features
 
 - **Participant Management:** Easily add or remove participants in your group.
@@ -75,4 +73,4 @@ This project uses Genkit to manage the AI flows and Next.js for the frontend. Yo
 
 ## ✍️ Author
 
-- **[Your Name Here]** - [Your Website/GitHub Link Here]
+- **AK DINESH** - https://github.com/akdinesh2003
