@@ -1,21 +1,20 @@
-import type { SVGProps } from "react";
+"use client";
 
-export const Icons = {
-  logo: (props: SVGProps<SVGSVGElement>) => (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <circle cx="10" cy="14" r="5" />
-      <path d="M19 9.5a5 5 0 1 0-5.7 6.2"/>
-      <line x1="2" y1="12" x2="22" y2="12" />
-    </svg>
-  ),
-};
+import { Icons } from "@/components/icons";
+import { ModeToggle } from "@/components/mode-toggle";
+
+export function Header() {
+  return (
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 items-center justify-between px-4">
+        <div className="flex items-center gap-3">
+          <Icons.logo className="h-7 w-7 text-primary" />
+          <h1 className="text-2xl font-bold tracking-tight font-headline">
+            BillSplitr
+          </h1>
+        </div>
+        <ModeToggle />
+      </div>
+    </header>
+  );
+}
